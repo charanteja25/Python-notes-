@@ -1,0 +1,2 @@
+# Python-notes-
+python prep
