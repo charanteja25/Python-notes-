@@ -57,3 +57,86 @@ num1 = 6
 num2 = 36
 
 print("H.C.F of {0} and {1} is: {2}".format(num1, num2, computeHCF(num1, num2)))
+
+
+abs() - math function
+
+all() -
+
+#return value of all() function
+
+True: if all elements in an iterable are true
+
+False: if any element in an iterable is false
+
+
+dir()
+
+The dir() tries to return a list of valid attributes of the object.
+
+If the object has dir() method, the method will be called and must return the list of attributes.
+
+If the object doesn't have dir() method, this method tries to find information from the dict attribute (if defined), and from type object. In this case, the list returned from dir() may not be complete.
+
+
+divmod() - 
+
+The divmod() method takes two numbers and returns a pair of numbers (a tuple) consisting of their quotient and remainder.
+
+
+enumerate() - [list/tuple/set value]
+
+The enumerate() method adds counter to an iterable and returns it
+
+syntax: enumerate(iterable, start=0) - start value can be any number that will be iterated 
+
+
+
+filter()
+
+The filter() method constructs an iterator from elements of an iterable for which a function returns true.
+
+
+def find_positive_number(num):
+    """
+    This function returns the positive number if num is positive
+    """
+    if num > 0:
+        return num
+        
+        
+number_list = range(-10, 10) #create a list with numbers from -10 to 10
+print(list(number_list))
+
+positive_num_lst = list(filter(find_positive_number, number_list))
+
+print(positive_num_lst)
+
+
+isinstance() - [ used to find if it is particular data type]
+
+The isinstance() function checks if the object (first argument) is an instance or subclass of classinfo class (second argument).
+
+syntax: isinstance(object, classinfo)
+
+
+
+map()
+
+Map applies a function to all the items in an input_list.
+
+syntax: map(function_to_apply, list_of_inputs)
+
+
+
+reduce() - [applies rolling computaion] [multiply consequent numbers ] 
+
+reduce() function is for performing some computation on a list and returning the result.
+
+It applies a rolling computation to sequential pairs of values in a list.
+
+
+Filter, Map, Reduce - most used for data science , to avoid for-loop  
+
+
+User defined Functions 
