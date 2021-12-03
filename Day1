@@ -140,3 +140,17 @@ Filter, Map, Reduce - most used for data science , to avoid for-loop
 
 
 User defined Functions 
+
+
+
+Functional Arguments
+
+1.  Default Arguments
+2. Keyword Argum -
+        def greet(**kwargs):
+    """
+    This function greets to person with the provided message
+    """
+    if kwargs:
+        print("Hello {0} , {1}".format(kwargs['name'], kwargs['msg']))
+greet(name="satish", msg="Good Morning")
