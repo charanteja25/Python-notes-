@@ -163,3 +163,50 @@ greet(name="satish", msg="Good Morning")
 
 Sometimes, we do not know in advance the number of arguments that will be passed into a function.Python allows us to handle this kind of situation through function calls with arbitrary number of arguments.
 
+
+
+Recursion - [ using same function by changing value slightly ]
+
+            [stack of function calls]
+
+def factorial(num):
+    """
+    This is a recursive function to find the factorial of a given number
+    """
+    return 1 if num == 1 else (num * factorial(num-1))
+
+num = 5
+print ("Factorial of {0} is {1}".format(num, factorial(num)))
+
+
+Advantages¶
+
+    Recursive functions make the code look clean and elegant. - [ if recursive solution exists easy to follow ]
+
+    A complex task can be broken down into simpler sub-problems using recursion.
+
+    Sequence generation is easier with recursion than using some nested iteration.
+
+Disadvantages
+
+    Sometimes the logic behind recursion is hard to follow through.
+
+    Recursive calls are expensive (inefficient) as they take up a lot of memory and time.
+
+    Recursive functions are hard to debug.
+
+
+
+
+Python program to display the fibonacci sequence up to n-th term using recursive function
+
+def fibonacci(num):
+    """
+    Recursive function to print fibonacci sequence
+    """
+    return num if num <= 1 else fibonacci(num-1) + fibonacci(num-2)  - [boundary case, recursive fn]
+
+nterms = 10
+print("Fibonacci sequence")
+for num in range(nterms):
+    print(fibonacci(num))
