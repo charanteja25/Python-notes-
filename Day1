@@ -146,6 +146,8 @@ User defined Functions
 Functional Arguments
 
 1.  Default Arguments
+
+
 2. Keyword Argum -
         def greet(**kwargs):
     """
@@ -154,3 +156,10 @@ Functional Arguments
     if kwargs:
         print("Hello {0} , {1}".format(kwargs['name'], kwargs['msg']))
 greet(name="satish", msg="Good Morning")
+
+
+
+3. Arbitary Arguments - [arbitrary length of the line ]
+
+Sometimes, we do not know in advance the number of arguments that will be passed into a function.Python allows us to handle this kind of situation through function calls with arbitrary number of arguments.
+
