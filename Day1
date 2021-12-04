@@ -127,6 +127,15 @@ Map applies a function to all the items in an input_list.
 
 syntax: map(function_to_apply, list_of_inputs)
 
+numbers = [1, 2, 3, 4]
+
+def powerOfTwo(num):
+    return num ** 2
+
+#using map() function
+squared = list(map(powerOfTwo, numbers))
+print(squared)
+
 
 
 reduce() - [applies rolling computaion] [multiply consequent numbers ] 
@@ -134,6 +143,26 @@ reduce() - [applies rolling computaion] [multiply consequent numbers ]
 reduce() function is for performing some computation on a list and returning the result.
 
 It applies a rolling computation to sequential pairs of values in a list.
+
+#product of elemnts in a list
+product = 1
+lst = [1, 2, 3, 4]
+
+# traditional program without reduce()
+for num in lst:
+    product *= num
+print(product)
+
+
+#with reduce()
+from functools import reduce # in Python 3.
+
+def multiply(x,y):
+    return x*y;
+
+product = reduce(multiply, lst)
+print(product)
+
 
 
 Filter, Map, Reduce - most used for data science , to avoid for-loop  
