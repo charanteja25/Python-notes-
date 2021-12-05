@@ -1,0 +1,21 @@
+Modules
+
+Modules refer to a file containing Python statements and definitions.
+
+A file containing Python code, for e.g.: abc.py, is called a module and its module name would be "abc".
+
+We use modules to break down large programs into small manageable and organized files. Furthermore, modules provide reusability of code.
+
+We can define our most used functions in a module and import it, instead of copying their definitions into different programs.
+
+
+
+import with renaming using as
+
+we can get particular functions using from
+
+* is used to import all 
+
+dir() to now all the names inside module 
+
+we have to add __doc__ to use functions written by others
