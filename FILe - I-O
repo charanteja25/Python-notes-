@@ -1,0 +1,13 @@
+read moves cursor 
+
+tell() - location of cursor
+seek() - move cursor to our required location
+
+import os
+os.remove
+
+os.getcwd - current working directory 
+
+os.chdir(_____)
+
+empty dir can be removed by os.rmdir(__)
