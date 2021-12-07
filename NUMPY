@@ -1,0 +1,72 @@
+.ndim
+.shape
+len(__)
+
+1D array is vector 
+
+two lists - list within list - 2D array - matrix
+
+list within list within list  -3D array - vector
+
+nD array is tensor 
+
+np.arange(10)
+
+array([1, 2, 3,.....10])
+
+np.arange(1,10,2) start end step
+
+
+np.linspace(0,1,6) start end no.of points
+
+np.ones((3,3))
+
+3x3 matrix with ones 
+
+np.zeros((3,3))
+
+3x3 matrix with zeros
+
+np.eye(3) identity matrix 
+np.eye(3,2) idemtity matrix with remaining elements 0
+
+np.diag([1,2,3,4])
+np.diag(a) extract diagonal  
+
+np.random.randn(4)sample of standard normal -gausian
+
+
+we can change data type explicitly - np.arange(10, dtype= 'float64')
+
+np.zeros((3,3)) - will give float data tyepe , matrix
+
+INDEXING
+
+Slicing
+a[1:8:2] startindex: endindex: step
+
+a[5:] from 5th element we cab change values 
+
+a[5:] = b[::-1]
+
+from 5th value we get b
+
+COPY and VIEWS
+
+other element points to subarray but same memory location
+np.shares_memory(a, b)
+
+if we modify b, a also can get modified
+
+c= a[::2].copy()
+it wont share the location
+
+FANCY INDEXING 
+Using boolean mask
+mask = ( a % 2 == 0)
+
+all even num
+
+indexing mask can br useful to assign a new value to subarray
+
+new value can be assinged 
