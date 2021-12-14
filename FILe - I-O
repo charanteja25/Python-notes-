@@ -10,4 +10,6 @@ os.getcwd - current working directory
 
 os.chdir(_____)
 
+os.listdir(os.getcwd())
+
 empty dir can be removed by os.rmdir(__)
