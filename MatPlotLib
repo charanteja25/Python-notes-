@@ -1,0 +1,39 @@
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16]) - x,y
+plt.ylabel('squares')
+plt.xlabel('numbers')
+plt.grid() - for grid
+plt.show()
+
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16], ro) - 'r' is red colour , 'o' is dot 
+
+plt.plot(t, t**2, 'b--', label='^2')
+plt.plot(t,t**2.2, 'rs', label='^2.2')
+plt.plot(t, t**2.5, 'g^', label='^2.5')
+plt.grid()
+plt.legend() # add legend based on line labels
+plt.show()
+
+-- is line , 'b' - blue, label is top corner 
+'r' is red/colour, 's' is square/shape
+'g' is green, '^" is triangle 
+legend - is line namer (value in label)
+
+
+x1 = [1, 2, 3, 4]
+y1 = [1, 4, 9, 16]
+x2 = [1, 2, 3, 4]
+y2 = [2, 4, 6, 8]
+lines = plt.plot(x1, y1, x2, y2)
+
+# use keyword args
+plt.setp(lines[0], color='r', linewidth=2.0)  - plt.setp
+
+# or MATLAB style string value pairs
+plt.setp(lines[1], 'color', 'g', 'linewidth', 2.0)
+
+plt.grid()
+
+
+plt.subplot(211) - '2' rows '1' column '1st' table
+           (212) - 
+           
