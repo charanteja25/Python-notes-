@@ -45,7 +45,7 @@ INDEXING
 Slicing
 a[1:8:2] startindex: endindex: step
 
-a[5:] from 5th element we cab change values 
+a[5:] from 5th element we can change values 
 
 a[5:] = b[::-1]
 
@@ -70,3 +70,124 @@ all even num
 indexing mask can br useful to assign a new value to subarray
 
 new value can be assinged 
+
+
+NUMPY ARRAY OPERATIONS
+
+with operations  - +1, **2, 
+
+all arithmetic operates elementwise
+ - element wise operation
+ - c.dot(c) is not same c*c - multiplication - '*' multiplies elemental - .dot() usual matrix mult
+ 
+ comparisions - 
+  - element wise comparisions - np.array()
+   - to know all elements equal or not  - np.array_equal()
+  
+  Logical Operations -  np.array([],dtype= )
+   - np.logicial_or(), np.logical_and()
+  
+  Transcedental Functions 
+   - np.range(5)
+   - np.sin(), np.exp(), np.log() - element wise functions
+ 
+ Shape Mismatch
+  - Value error if different shapes 
+  
+ Basic Reductions - 
+  - np.sum(x)
+  - np.array([1,1].[2,2])
+  - x.sum(axis = 0) - columns 
+  - x.sum(axis = 1) - rows
+  - x.min()
+  - x.max()
+  - x.argmin() - index of min element
+  - x.argmax() - index of max element
+ 
+ Logical Ops - 
+  - np.all() - logical and - if all of them true returns true 
+  - np.any() - logical or - if any one of them is true returns true 
+  
+ Stastics -
+ - x.mean()
+ - x.median() - axis - 0 columns
+              - axis - 1 rows
+  - x.std() - standard deviation 
+  
+  
+  Example -
+  
+  Transpose op.
+  
+  
+  import numpy as np
+
+data  = np.loadtxt('population.txt')
+
+print(data)
+
+
+year, hares, lynxes, carrots = data.T
+
+#print(year)
+
+populations = data[ :, 1:]
+
+print(populations)
+
+print(np.argmax(populations, axis =1))
+
+print(populations.std(axis =0))
+#print(populations.std(axis =1))
+
+BROADCASTING
+
+a = np.tile(np.arange(0,40,10),(3,1))
+
+
+a = a[:, np.newaxis] - conv 1D to 2D array
+
+
+ARRAY SHAPE MANIPULATION
+
+Flattening 
+
+a = np.array([1, 2, 3],[4, 5, 6])
+a.ravel() - flattening 
+
+Transpose 
+
+
+Reshape
+
+to undo the changes - undo flattening
+
+Reshape may return copied value usually both save in same memory allocation
+
+
+Adding dimension
+
+z[:,np.newaxis]
+
+Dimension shuffling
+
+a = np.arange(24).reshape(4, 3, 2)
+
+4 matrices in 3x2 sizes 
+
+Resizing
+
+resizing can be done as other elements will be changed to 0
+but if it is referred to any other element it will not be resized 'Value error'
+
+Sorting
+
+=np.sort(,axis=0,1) or .sort(axis=0,1)
+
+sorting with fancy indexing 
+
+np.argsort() - sorting done by indices and index can be printed and a[j] prints the values in sorted manner 
+
+
+
+
