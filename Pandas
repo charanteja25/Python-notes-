@@ -1,0 +1,43 @@
+
+PaANDAS 
+
+import pandas as pd
+
+numpy array is import - pandas 'df' - data frame is important 
+
+df = pd.read_csv('____')
+
+Because to retrieve multiple columns you have to write column names like [['col1,'col2','col3']]. for one column retrieval df['col'] or df[['col']] won't throw error
+
+
+# Introduction to Pandas dataframe
+
+
+csv - comma separated values 
+
+we can make it a list of tuples to form a dataset 
+
+df = pd.DataFrame(weather_data, columns=['day', 'temperature', 'windspeed', 'event'])
+
+df.head() top few rows 
+df.tail() bottom few rows
+
+df[2:5] - slicing particular rows 
+df.columns - gives column names 
+df.____ - particular column name can be called 
+df['____'] - same as accesing column
+df['__', '__'] for two columns 
+df['__'].max for maximum 
+df['__'].min for minimum
+df['___'].describe() - for all analysis related values  - different for strings 
+
+df[df.temperature == df.temperature.max()] - to get the row of which is having max temp
+
+df.day[df.temperature == df.temperature.max()] - to get the day 
+
+KEY OPERTATIONS
+
+XLS -microsoft excel files - to store data in table - '-xls', '-xlsx'
+
+
+
