@@ -39,5 +39,16 @@ KEY OPERTATIONS
 
 XLS -microsoft excel files - to store data in table - '-xls', '-xlsx'
 
+df.to_csv("new_index_file.csv", index=False) - to save a file without index 
+df.to_csv('_____') - save to new csv file 
+
+df.to_excel('new.xlsx', sheet_name='weather_data') - creates xls files 
 
 
+g = df.groupby('city')
+
+for city,city_df in g:
+    print(city)
+    print(city_df)
+
+index is not same as row num
