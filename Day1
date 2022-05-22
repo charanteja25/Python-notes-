@@ -239,3 +239,8 @@ nterms = 10
 print("Fibonacci sequence")
 for num in range(nterms):
     print(fibonacci(num))
+
+
+
+END OF DAY1 
+
